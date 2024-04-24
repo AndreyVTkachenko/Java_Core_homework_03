@@ -17,4 +17,6 @@ public class Worker extends Employee{
         return "Работник: " + this.firstName + " " + this.lastName + " на должности: "
                 + this.jobTitle + " с зарплатой: " + calculateMonthlySalary() + " рублей";
     }
+
+
 }

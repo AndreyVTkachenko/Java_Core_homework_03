@@ -46,8 +46,11 @@ public class Main {
         employees.add(employee9);
         employees.add(employee10);
 
+        System.out.println("список всех сотрудников: ");
         for (Employee employee : employees) {
             System.out.println(employee.toString());
         }
+
+
     }
 }

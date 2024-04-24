@@ -17,4 +17,16 @@ public abstract class Employee {
         return "Сотрудник: " + firstName + " " + lastName + " на должности: "
                 + jobTitle + " с зарплатой: " + calculateMonthlySalary() + " рублей";
     }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getJobTitle() {
+        return jobTitle;
+    }
 }
