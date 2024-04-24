@@ -12,9 +12,32 @@
 возможность вывода данных с использованием foreach (подсказка: вам потребуется поработать с интерфейсом Iterable).
  */
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
 
+        Employee employee0 = new Worker("Example_01", 100_000);
+        Employee employee1 = new Worker("Example_02", 90_000);
+        Employee employee2 = new Worker("Example_03", 105_000);
+
+        Employee employee3 = new Freelancer("Example_04", 750);
+        Employee employee4 = new Freelancer("Example_05", 725);
+        Employee employee5 = new Freelancer("Example_06", 730);
+
+        List<Employee> employees = new ArrayList<>();
+
+        employees.add(employee0);
+        employees.add(employee1);
+        employees.add(employee2);
+        employees.add(employee3);
+        employees.add(employee4);
+        employees.add(employee5);
+
+        for (Employee employee : employees) {
+            System.out.println(employee.toString());
+        }
     }
 }

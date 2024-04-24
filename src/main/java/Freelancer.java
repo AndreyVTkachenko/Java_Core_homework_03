@@ -11,4 +11,9 @@ public class Freelancer extends Employee{
     public double calculateMonthlySalary() {
         return 20.8 * 8 * hourlyPayment;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

@@ -8,4 +8,8 @@ public abstract class Employee {
 
     public abstract double calculateMonthlySalary();
 
+    @Override
+    public String toString() {
+        return "Сотрудник: " + name +  " с зарплатой: " + calculateMonthlySalary() + " рублей";
+    }
 }

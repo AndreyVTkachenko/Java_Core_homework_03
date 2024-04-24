@@ -11,4 +11,9 @@ public class Worker extends Employee{
     public double calculateMonthlySalary() {
         return monthlyPayment;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
