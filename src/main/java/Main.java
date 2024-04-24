@@ -13,6 +13,7 @@
  */
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -47,10 +48,29 @@ public class Main {
         employees.add(employee10);
 
         System.out.println("список всех сотрудников: ");
+        printEmployees(employees);
+
+        Collections.sort(employees, new FirstNameComparator());
+        System.out.println("сортировка по имени: ");
+        printEmployees(employees);
+
+        Collections.sort(employees, new LastNameComparator());
+        System.out.println("сортировка по фамилии: ");
+        printEmployees(employees);
+
+        Collections.sort(employees, new JobTitleComparator());
+        System.out.println("сортировка по должности: ");
+        printEmployees(employees);
+
+        Collections.sort(employees, new SalaryComparator());
+        System.out.println("сортировка по зарплате: ");
+        printEmployees(employees);
+
+    }
+
+    static void printEmployees(List<Employee> employees) {
         for (Employee employee : employees) {
             System.out.println(employee.toString());
         }
-
-
     }
 }
