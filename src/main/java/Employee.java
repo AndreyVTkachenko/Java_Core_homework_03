@@ -1,10 +1,12 @@
 public abstract class Employee {
 
-    private String name;
-    private String jobTitle;
+    String firstName;
+    String lastName;
+    String jobTitle;
 
-    public Employee(String name, String jobTitle) {
-        this.name = name;
+    public Employee(String firstName, String lastName, String jobTitle) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.jobTitle = jobTitle;
     }
 
@@ -12,6 +14,7 @@ public abstract class Employee {
 
     @Override
     public String toString() {
-        return "Сотрудник: " + name + "\t на должности: " + jobTitle + "\t\t с зарплатой: " + calculateMonthlySalary() + " рублей";
+        return "Сотрудник: " + firstName + " " + lastName + " на должности: "
+                + jobTitle + " с зарплатой: " + calculateMonthlySalary() + " рублей";
     }
 }

@@ -19,13 +19,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Employee employee0 = new Worker("Example_01", "developer", 100_000);
-        Employee employee1 = new Worker("Example_02", "tester", 90_000);
-        Employee employee2 = new Worker("Example_03", "analyst", 105_000);
+        Employee employee0 = new Worker("Иван", "Карамазов", "developer", 100_000);
+        Employee employee1 = new Worker("Анна", "Каренина", "tester", 90_000);
+        Employee employee2 = new Worker("Евгений", "Онегин", "analyst", 105_000);
+        Employee employee6 = new Worker("Елизавета", "Гафтон", "designer", 95_000);
+        Employee employee7 = new Worker("Федор", "Карамазов", "developer", 102_500);
+        Employee employee8 = new Worker("Соня", "Мармеладова", "designer", 100_000);
+        Employee employee9 = new Worker("Лев", "Мышкин", "developer", 97_500);
+        Employee employee10 = new Worker("Варвара", "Ставрогина", "tester", 95_000);
 
-        Employee employee3 = new Freelancer("Example_04", "developer",750);
-        Employee employee4 = new Freelancer("Example_05", "tester", 725);
-        Employee employee5 = new Freelancer("Example_06", "developer", 730);
+        Employee employee3 = new Freelancer("Пьер", "Безухов", "developer",750);
+        Employee employee4 = new Freelancer("Родион", "Раскольников", "tester", 725);
+        Employee employee5 = new Freelancer("Андрей", "Болконский", "developer", 730);
 
         List<Employee> employees = new ArrayList<>();
 
@@ -35,6 +40,11 @@ public class Main {
         employees.add(employee3);
         employees.add(employee4);
         employees.add(employee5);
+        employees.add(employee6);
+        employees.add(employee7);
+        employees.add(employee8);
+        employees.add(employee9);
+        employees.add(employee10);
 
         for (Employee employee : employees) {
             System.out.println(employee.toString());
