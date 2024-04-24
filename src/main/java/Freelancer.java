@@ -2,8 +2,8 @@ public class Freelancer extends Employee{
 
     private double hourlyPayment;
 
-    public Freelancer(String name, double hourlyPayment) {
-        super(name);
+    public Freelancer(String name, String jobTitle, double hourlyPayment) {
+        super(name, jobTitle);
         this.hourlyPayment = hourlyPayment;
     }
 

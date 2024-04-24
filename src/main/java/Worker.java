@@ -2,8 +2,8 @@ public class Worker extends Employee{
 
     private double monthlyPayment;
 
-    public Worker(String name, double monthlyPayment) {
-        super(name);
+    public Worker(String name, String jobTitle, double monthlyPayment) {
+        super(name, jobTitle);
         this.monthlyPayment = monthlyPayment;
     }
 

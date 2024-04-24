@@ -19,13 +19,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Employee employee0 = new Worker("Example_01", 100_000);
-        Employee employee1 = new Worker("Example_02", 90_000);
-        Employee employee2 = new Worker("Example_03", 105_000);
+        Employee employee0 = new Worker("Example_01", "developer", 100_000);
+        Employee employee1 = new Worker("Example_02", "tester", 90_000);
+        Employee employee2 = new Worker("Example_03", "analyst", 105_000);
 
-        Employee employee3 = new Freelancer("Example_04", 750);
-        Employee employee4 = new Freelancer("Example_05", 725);
-        Employee employee5 = new Freelancer("Example_06", 730);
+        Employee employee3 = new Freelancer("Example_04", "developer",750);
+        Employee employee4 = new Freelancer("Example_05", "tester", 725);
+        Employee employee5 = new Freelancer("Example_06", "developer", 730);
 
         List<Employee> employees = new ArrayList<>();
 
