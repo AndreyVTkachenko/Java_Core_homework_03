@@ -14,8 +14,8 @@ public class Worker extends Employee{
 
     @Override
     public String toString() {
-        return "Работник: " + this.firstName + " " + this.lastName + " на должности: "
-                + this.jobTitle + " с зарплатой: " + calculateMonthlySalary() + " рублей";
+        return "Работник: " + firstName + " " + lastName + " на должности: "
+                + jobTitle + " с зарплатой: " + calculateMonthlySalary() + " рублей";
     }
 
 

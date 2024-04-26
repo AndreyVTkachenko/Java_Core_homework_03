@@ -14,7 +14,7 @@ public class Freelancer extends Employee{
 
     @Override
     public String toString() {
-        return "Фрилансер: " + this.firstName + " " + this.lastName + " на должности: "
-                + this.jobTitle + " с зарплатой: " + calculateMonthlySalary() + " рублей";
+        return "Фрилансер: " + firstName + " " + lastName + " на должности: "
+                + jobTitle + " с зарплатой: " + calculateMonthlySalary() + " рублей";
     }
 }

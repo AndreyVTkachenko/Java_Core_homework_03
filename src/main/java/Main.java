@@ -13,7 +13,6 @@
  */
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -49,20 +48,24 @@ public class Main {
 
         System.out.println("список всех сотрудников: ");
         printEmployees(employees);
+        System.out.println();
 
-        Collections.sort(employees, new FirstNameComparator());
+        employees.sort(new FirstNameComparator());
         System.out.println("сортировка по имени: ");
         printEmployees(employees);
+        System.out.println();
 
-        Collections.sort(employees, new LastNameComparator());
+        employees.sort(new LastNameComparator());
         System.out.println("сортировка по фамилии: ");
         printEmployees(employees);
+        System.out.println();
 
-        Collections.sort(employees, new JobTitleComparator());
+        employees.sort(new JobTitleComparator());
         System.out.println("сортировка по должности: ");
         printEmployees(employees);
+        System.out.println();
 
-        Collections.sort(employees, new SalaryComparator());
+        employees.sort(new SalaryComparator());
         System.out.println("сортировка по зарплате: ");
         printEmployees(employees);
 
